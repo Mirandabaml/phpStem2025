@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <title>CiTIM Grupo XB</title>
+    <link rel="stylesheet" href="css/problemaStem.css"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <script src="js/calcularStem.js"></script>
+</head>
+<body>
+  <section class="wrapper">
+    <header>
+      <h1 class="logo">Uso de la Ciencia, Tecnologia, Ingeniería y Matemáticas para resolver problemas</h1>
+    </header>
+    <section  class="problema">
+      <h2>Problema: Capacidad de baterías para 2 días de autonomía</h2>
+      <p>Descripción:</p>
+      <p>
+        En este caso base se utilizarán baterías de 100 Ah con una profundidad de descarga del 80%. 
+        Se dimensionará para que suministre energía eléctrica a 2 días de autonomía, con un consumo diario de 13073 Wh y un sistema de 48 V.
+      </p>
+    </section>
+    
+       <div class="esquemaProblema">
+       <h2>Esquema</h2>
+       <img class="imgProblema" src="images/1.jpeg" alt="esquema">
+       </div>
+
+      <section class="formulas">
+        <h2>Fórmulas</h2>
+        <p>
+          <b>Capacidad Total Baterías (Ah) =</b><br>
+          (Consumo Diario × Días de Autonomía × 1.15) / (Profundidad de Descarga × Voltaje del Sistema)
+        </p>
+      </section>
+      
+      <section class="datos">
+        <h2>Datos:</h2>
+        <ul>
+          <li>Consumo diario = 13073 Wh</li>
+          <li>Días de autonomía = 2</li>
+          <li>Profundidad de descarga = 0.80</li>
+          <li>Voltaje del sistema = 48 V</li>
+        </ul>
+      </section>
+      
+      <section class="calculos">
+        <h2>Solución</h2>
+        <p>
+          Capacidad Total = (13073 × 2 × 1.15) / (0.80 × 48)
+        </p>
+        <button onclick="calcula_();">Presiona para calcular</button>
+      </section>
+      
+      <section class="resultado">
+        <h2>Resultado:</h2>
+        <div id="resultadoA"></div>
+      </section>
+    </section>
+    <footer class="pie">
+     Creative Commons versión 3.0 SciSoft 2024
+    </footer>
+  </section>
+</body>
+</html>
